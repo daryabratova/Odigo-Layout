@@ -447,6 +447,10 @@ img {
     flex-direction: column;
     color: white;
 
+    &-img {
+      display: block;
+    }
+
     &-pic {
       position: relative;
       margin-bottom: 45px;
@@ -463,6 +467,7 @@ img {
       width: 100%;
       background: rgba(21, 24, 36, 0.6);
       padding: 16px 25px;
+      padding-top: 13px;
     }
 
     &-title {
