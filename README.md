@@ -14,7 +14,7 @@ This is my study project, where I was using Figma, Sass, and BEM-methodology for
 
 
  ## Demo
-Online demo is available [here](https://livelife26.github.io/Odigo---first-template/).
+Online demo is available [here](https://livelife26.github.io/Odigo/).
 
 
 ## Languages & Tools
