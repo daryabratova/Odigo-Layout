@@ -1,4 +1,4 @@
-# Odigo - Landing page :jp:
+# Odigo :jp:
 **Website of the company that provides tours to Japan.**
 
 
