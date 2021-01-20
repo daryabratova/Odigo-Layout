@@ -1,54 +1,7 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import "~normalize.css";
 
-/* lato-regular - latin */
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/lato-v16-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local("Lato Regular"), local("Lato-Regular"),
-    url("../fonts/lato-v16-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/lato-v16-latin-regular.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-regular.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/lato-v16-latin-regular.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-regular.svg#Lato")
-      format("svg"); /* Legacy iOS */
-}
-/* lato-700 - latin */
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/lato-v16-latin-700.eot"); /* IE9 Compat Modes */
-  src: local("Lato Bold"), local("Lato-Bold"),
-    url("../fonts/lato-v16-latin-700.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/lato-v16-latin-700.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-700.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/lato-v16-latin-700.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-700.svg#Lato")
-      format("svg"); /* Legacy iOS */
-}
-/* lato-900 - latin */
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../fonts/lato-v16-latin-900.eot"); /* IE9 Compat Modes */
-  src: local("Lato Black"), local("Lato-Black"),
-    url("../fonts/lato-v16-latin-900.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/lato-v16-latin-900.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/lato-v16-latin-900.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/lato-v16-latin-900.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/lato-v16-latin-900.svg#Lato")
-      format("svg"); /* Legacy iOS */
-}
+@import "~@fontsource/lato/400.css";
+@import "~@fontsource/lato/700.css";
 
 $blue-clr: #006dfe;
 
@@ -100,12 +53,12 @@ img {
   color: $blue-clr;
   text-decoration: none;
   padding-right: 59px;
-  background: url(../images/svg/arrow.svg) no-repeat 95% center;
+  background: url(./assets/images/arrow.svg) no-repeat 95% center;
   transition: 0.2s all;
 
   &:hover,
   &:focus {
-    background: url(../images/svg/arrow.svg) no-repeat right center;
+    background: url(./assets/images/arrow.svg) no-repeat right center;
   }
 }
 
@@ -178,7 +131,7 @@ img {
 /*Intro styles start*/
 .intro {
   min-height: 100vh;
-  background: url("../images/intro-bg.jpg") no-repeat center;
+  background: url("./assets/images/intro-bg.jpg") no-repeat center;
   background-size: cover;
   color: white;
   padding-top: 263px;
@@ -206,7 +159,7 @@ img {
   }
 
   &__field {
-    background: transparent url(../images/svg/oval.svg) no-repeat left 7px;
+    background: transparent url(./assets/images/oval.svg) no-repeat left 7px;
     background-size: 20px;
     border: 0;
     border-bottom: 2px solid #bfc0c5;
@@ -361,7 +314,7 @@ img {
     &-name {
       color: white;
       z-index: 4;
-      font-weight: bold;
+      font-weight: 700;
       font-size: 50px;
       line-height: 60px;
       position: absolute;
@@ -479,14 +432,14 @@ img {
     &-likes {
       font-weight: 500;
       padding-right: 20px;
-      background: url(../images/svg/heart.svg) no-repeat right;
+      background: url(./assets/images/heart.svg) no-repeat right;
       margin-right: 14px;
     }
 
     &-comments {
       font-weight: 500;
       padding-right: 23px;
-      background: url(../images/svg/comment.svg) no-repeat right;
+      background: url(./assets/images/comment.svg) no-repeat right;
     }
 
     &-desc {
