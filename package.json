@@ -1,15 +1,24 @@
 {
   "name": "odigo",
   "version": "1.0.0",
+  "homepage": "https://livelife26.github.io/Odigo",
   "main": "index.js",
-  "repository": "https://github.com/livelife26/Odigo---first-tamplate.git",
+  "repository": "https://github.com/livelife26/Odigo.git",
   "author": "lovelaught <darya.bratova13@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "dev": "cross-env NODE_ENV=development webpack serve",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@fontsource/lato": "^4.1.0",
     "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.3",
     "css-loader": "^5.0.1",
     "file-loader": "^6.2.0",
     "html-loader": "^1.3.2",
@@ -21,5 +30,8 @@
     "webpack": "^4.46.0",
     "webpack-cli": "^4.3.1",
     "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }

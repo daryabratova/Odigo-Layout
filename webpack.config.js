@@ -1,7 +1,23 @@
 const path = require("path");
 
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+const packageInfo = require("./package.json");
+
+const { NODE_ENV = "production" } = process.env;
+
+const getPublicPath = () => {
+  const { homepage } = packageInfo;
+  let prefix = new URL(homepage).pathname;
+
+  if (NODE_ENV === "development") {
+    prefix = "";
+  }
+
+  return `${prefix}/assets/`;
+};
 
 module.exports = {
   mode: "production",
@@ -9,7 +25,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "./dist/assets"),
     filename: "[hash].js",
-    publicPath: "/assets/",
+    publicPath: getPublicPath(),
   },
   module: {
     rules: [
@@ -52,6 +68,7 @@ module.exports = {
   },
   target: "web",
   plugins: [
+    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       template: "./src/app/index.html",
