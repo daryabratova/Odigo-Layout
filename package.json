@@ -1,9 +1,9 @@
 {
   "name": "odigo",
   "version": "1.0.0",
-  "homepage": "https://livelife26.github.io/Odigo",
+  "homepage": "https://livelife26.github.io/Odigo-Layout",
   "main": "index.js",
-  "repository": "https://github.com/livelife26/Odigo.git",
+  "repository": "https://github.com/livelife26/Odigo-Layout.git",
   "author": "lovelaught <darya.bratova13@gmail.com>",
   "license": "MIT",
   "scripts": {

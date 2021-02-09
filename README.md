@@ -1,10 +1,10 @@
-# Odigo :jp:
+# Odigo Layout :jp:
 
-**Layout for the website of the company that provides tours to Japan.**
+**The web page of the company that provides tours to Japan.**
 
 ## Demo
 
-Online demo is available [here](https://livelife26.github.io/Odigo/).
+Online demo is available [here](https://livelife26.github.io/Odigo-Layout/).
 
 ## Technologies
 
